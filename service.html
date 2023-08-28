@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services MUBuilders</title>
+    <style>
+
+
+         body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    @media screen and (max-width: 768px) {
+    
+      .title-container {
+      height: 400px; 
+    }
+    li {
+      font-size: 12px;
+    }
+  }
+
+
+  .box-container {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      max-width: auto;
+      background-color: #001427;
+      width: 100%;
+      height: 600px;
+      border: 2px solid black;
+      
+      
+    }
+
+    .box {
+      width: 600px;
+      height: 100%;
+      background-color: aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      background:
+     background-repeat: no-repeat;
+    }
+
+    .box:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .slideshow-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .slideshow-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .slideshow-image {
+      max-width: 80%;
+      max-height: 80%;
+      margin-bottom: 20px;
+    }
+
+    .caption {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      font-size: 36px;
+      cursor: pointer;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .top-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #403D39;
+      height: 100px;
+      padding: 10px 20px; 
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+    .button-container {
+      display: flex;
+      gap: 15px; 
+    }
+
+  .logo img {
+      width: 180px; 
+      height: 100px;
+    }
+
+    .buttoni a {
+      text-decoration: none;
+      
+    }
+
+    .buttoni button {
+      font-size: 18px;
+      font-weight: bold;
+      font-variant: small-caps;
+      background-color: #EB5E28;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border: 2px solid black;
+    }
+
+    .buttoni button:hover {
+      background-color: #D8471E;
+    }
+
+
+
+
+
+ .sub-container {
+    display: flex;
+    height: 800px;
+    background-color: #252422;
+    background-image: url("Ornament-Vector-2.png"); 
+  background-repeat: repeat;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+  }
+
+    .transition ul li {
+  transition: font-size 0.2s; 
+  cursor: pointer; 
+  margin: 5px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  color: #708D81;
+  align-items: center bottom;
+  text-align: center;
+  justify-content: center bottom;
+
+}
+
+
+.transition ul li:hover {
+  font-size: 1.7rem;
+ 
+  font-weight: bold;
+  font-style: italic;
+  color: #EB5E28; 
+}
+
+
+.title {
+  font-size: 1.2rem;
+  color: #000;
+  width: 100%;
+  align-items: center top;
+  text-align: center;
+  justify-content:top;
+}
+
+
+.bot-container {
+  background-color: #EB5E28;
+  height: 60px;
+  border: 2px solid black;
+    }
+    
+    
+</style>
+
+</head>
+
+<body>
+  <div class="top-container">
+    <div class="logo">
+      <img src="C:\Users\ukepe\Pictures\Saved Pictures\mu logo.png" alt="Logo">
+    </div>
+    <div class="buttoni button-container">
+      <a href="home.html"><button>Home</button></a>
+      <a href="service.html"><button>Services</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+    </div>
+  </div>
+  
+
+      <div class="box-container">
+
+        <div class="box" onclick="openSlideshow(0)">
+          Project
+        </div>
+        <div class="box" onclick="openSlideshow(1)">
+          Project
+        </div>
+        <div class="box" onclick="openSlideshow(2)">
+          Project 
+        </div>
+        <div class="box" onclick="openSlideshow(2)">
+          Project 
+        </div>
+        <div class="box" onclick="openSlideshow(2)">
+          Project 
+        </div>
+        <div class="box" onclick="openSlideshow(2)">
+          Project 
+        </div>
+        <div class="box" onclick="openSlideshow(2)">
+          Project 
+        </div>
+        <div class="box" onclick="openSlideshow(2)">
+          Project 
+        </div>
+        <div class="box" onclick="openSlideshow(2)">
+          Project 
+        </div>
+        
+      </div>
+
+
+   
+
+<div id="slideshow-modal" class="slideshow-modal">
+
+      <span class="close" onclick="closeSlideshow()">&times;</span>
+
+      <div class="slideshow-content">
+
+        <img id="slideshow-image" src="" alt="Slideshow Image">
+        <div id="slideshow-caption" class="caption"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+      </div>
+
+    </div>
+
+    <div class="sub-container">
+        <div class="transition">
+                        <ul>
+                            <li>Residential Builds</li>
+                            <li>Loft Builds</li>
+                            <li>Extension Builds</li>
+                            <li>Patio and Porch Builds</li>
+                            <li>Garage Coversions</li>
+                            <li>Full Kitchen Installment</li>
+                            <li>Doors, Skirting, Architraves</li>
+                            <li>Bathroom and Kitchen Tiles</li>
+                            <li>Guttering and Drainage</li>
+                            <li>Window Installments</li>
+                            
+                        </ul>
+
+                      </div>
+
+                    </div>
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script>
+    const projectSlideshows = [
+   {
+     images: [
+       "before 1 door.jpg",
+       "after 1 door.jpg",
+       "before 1 room.jpg",
+       "after 1 room.jpg",
+       
+       // Add more images for Project 1 as needed
+     ],
+     captions: [
+       "Door 1 Before",
+       "Door 1 After",
+       "Room 1 Before",
+       "Room 1 After",
+       // Add more captions for Project 1 as needed
+     ],
+   },
+   {
+     images: [
+       "project2 image1.jpg",
+       "project2 image2.jpg",
+       // Add more images for Project 2 as needed
+     ],
+     captions: [
+       "Project 2 Image 1",
+       "Project 2 Image 2",
+       // Add more captions for Project 2 as needed
+     ],
+   },
+   {
+     images: [
+       "project3 image1.jpg",
+       "project3 image2.jpg",
+       // Add more images for Project 3 as needed
+     ],
+     captions: [
+       "Project 3 Image 1",
+       "Project 3 Image 2",
+       // Add more captions for Project 3 as needed
+     ],
+   },
+   // Add more project slideshows as needed
+ ];
+ 
+ let currentProjectIndex = 0;
+ let currentSlideIndex = 0;
+ 
+ function openSlideshow(projectIndex) {
+   currentProjectIndex = projectIndex;
+   currentSlideIndex = 0;
+   showSlide(currentSlideIndex);
+   document.getElementById("slideshow-modal").style.display = "block";
+ }
+ 
+ function closeSlideshow() {
+   document.getElementById("slideshow-modal").style.display = "none";
+ }
+ 
+ function changeSlide(direction) {
+   currentSlideIndex += direction;
+   const currentSlideshow = projectSlideshows[currentProjectIndex];
+   if (currentSlideIndex < 0) {
+     currentSlideIndex = currentSlideshow.images.length - 1;
+   } else if (currentSlideIndex >= currentSlideshow.images.length) {
+     currentSlideIndex = 0;
+   }
+   showSlide(currentSlideIndex);
+ }
+ 
+ function showSlide(slideIndex) {
+   const slideshowImage = document.getElementById("slideshow-image");
+   const slideshowCaption = document.getElementById("slideshow-caption");
+ 
+   const currentSlideshow = projectSlideshows[currentProjectIndex];
+   slideshowImage.src = currentSlideshow.images[slideIndex];
+   slideshowCaption.textContent = currentSlideshow.captions[slideIndex];
+ }
+   </script>
+</body>
+
+</html>

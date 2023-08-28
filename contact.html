@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Contact MUBuilders</title>
+<style>
+         body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    @media screen and (max-width: 768px) {
+    
+      .title-container {
+      height: 400px; 
+    }
+    li {
+      font-size: 12px;
+    }
+  }
+
+
+
+
+.top-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #403D39;
+      height: 100px;
+      padding: 10px 20px; 
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+
+.button-container {
+      display: flex;
+      gap: 15px; 
+    }
+
+.logo img {
+      width: 180px; 
+      height: 100px;
+    }
+
+.buttoni a {
+      text-decoration: none;
+      
+    }
+
+.buttoni button {
+      font-size: 18px;
+      font-weight: bold;
+      font-variant: small-caps;
+      background-color: #EB5E28;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border: 2px solid black;
+    }
+
+.buttoni button:hover {
+      background-color: #D8471E;
+    }
+
+
+    .main-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #252422;
+  width: 100%;
+  height: 1000px;
+  border: 2px solid black;
+  background-image: url("Ornament-Vector-2.png"); 
+  background-repeat: repeat;
+}
+
+.contact-text {
+    text-align: center;
+    background: linear-gradient(45deg, #001427 20%, transparent 20%);
+    background-color: #CCC5B9;
+    padding: 20px;
+    height: 400px;
+    border: 2px solid black;
+    margin-top: 60px;
+    
+
+}
+
+
+.mail {
+  font-family: 'Roboto Mono', monospace;
+  color: #252422;
+  font-size: 20px;
+}
+
+
+.fa:hover {
+         opacity: 0.7;
+}
+
+.fa {
+            padding: 20px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+}
+
+
+         .fa-facebook {
+          background: #3B5998;
+          color: white;
+        }
+
+        .fas{
+          padding: 20px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .fa-instagram{
+
+        }
+
+</style>
+</head>
+<body>
+   
+   
+    <div class="top-container">
+        <div class="logo">
+          <img src="C:\Users\ukepe\Pictures\Saved Pictures\mu logo.png" alt="Logo">
+        </div>
+        <div class="buttoni button-container">
+          <a href="home.html"><button>Home</button></a>
+          <a href="service.html"><button>Services</button></a>
+          <a href="contact.html"><button>Contact</button></a>
+        </div>
+      </div>
+    
+   
+    <div class="main-container">
+    <div class="contact-text">
+        <div class="contact-title">
+            <h1 >Contact us to have a chat straight away:</h1>
+        </div>
+      <div class="white-bk">
+    <h2>Telephone: 07478138574</h2>
+    <h2>Alt Telephone: 07825663002</h2>
+    <a class="mail" href="mailto:MUBuildersoffice@gmail.com">MUBuildersoffice@gmail.com</a>
+    <h2>Facebook: </h2>
+    <a class="fa fa-facebook" href="www.facebook.com"></a>
+    <h2>Instagram: </h2>
+    <a class="fas fa-instagram"  href="www.instagram.com"> </a>
+
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const slideshowImages = document.querySelectorAll('.slideshow-image');
+  let currentSlideIndex = 0;
+
+  function showSlide(slideIndex) {
+    for (let i = 0; i < slideshowImages.length; i++) {
+      slideshowImages[i].style.opacity = '0';
+    }
+    slideshowImages[slideIndex].style.opacity = '1';
+  }
+
+  function nextSlide() {
+    currentSlideIndex = (currentSlideIndex + 1) % slideshowImages.length;
+    showSlide(currentSlideIndex);
+  }
+
+  // Start the slideshow
+  showSlide(currentSlideIndex);
+  setInterval(nextSlide, 10000); // Change image every 3 seconds
+</script>
+    
+    
+</body>

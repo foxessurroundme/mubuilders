@@ -11,52 +11,41 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
   <style>
-
-    
-    body {
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+  .sub-title {
+      font-size: 12px;
+    }
+  .textbox h1 {
+          font-size: 9px;
+  }
+  .textbox p {
+     font-size: 6px;
+  }
+}
+body {
       margin: 0;
       padding: 0;
       font-family: 'Roboto Mono', monospace;
     }
-
- @media screen and (max-width: 768px) {
-           .title-container {
-      height: 400px;
-             width: max-content
-    }
-    li {
-      font-size: 12px;
-    }
-  }
-
-
-
-
-  .top-container {
+    .top-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       background-color: #403D39;
-      height: 100px;
-      width: 100%;
-      padding: 10px 20px; /* Adding padding for spacing */
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adding shadow for a modern look */
+      padding: 10px 20px; 
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
     }
-
     .button-container {
       display: flex;
-      gap: 15px; /* Adding gap between buttons */
+      gap: 15px; 
     }
-
-  .logo img {
-      width: 180px; /* Adjust logo width */
+    .logo img {
+      width: 180px; 
       height: 100px;
     }
-
-    .buttoni a {
-      text-decoration: none;
-    }
-
     .buttoni button {
       font-size: 18px;
       font-weight: bold;
@@ -70,16 +59,9 @@
       transition: background-color 0.3s;
       border: 2px solid black;
     }
-
     .buttoni button:hover {
       background-color: #D8471E;
     }
-    
-
-
-
-   
-
     .title-container {
       position: relative;
       display: flex;
@@ -92,14 +74,13 @@
       overflow: hidden;
       border: 2px solid black;
     }
-
     .title {
       font-family: 'Roboto Mono', monospace;
       z-index: 1;
-      font-size: 60px;
+      font-size: 70px;
+      font-weight: 900;
     }
-
-      .slideshow-image {
+    .slideshow-image {
       position: absolute;
       transition: opacity 1s ease-in-out;
       top: 50%;
@@ -109,94 +90,47 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
-  }
-
+    }
     .sub-container {
       display: flex;
       background: linear-gradient(45deg, #001427 20%, transparent 20%);
       background-color: #403D39;
-      margin: 0;
-      padding: 0;
-      height: 180px;
-      width: 100%;
       align-items: center top;
       text-align: center;
       justify-content: center;
-      
-      
+      width: 100%;
     }
-
     .sub-title {
       font-family: 'Roboto Slab', serif;
       font-size: 40px;
       margin-top: 40px;
     }
-
-    
-
     .text-container {
+      display: flex;
       background-image: url("Ornament-Vector-2.png"); 
       background-repeat: repeat;
-      display: flex;
-      position: static;
-      align-items: center;
-      justify-content: space-between;
       flex-direction: row;
       background-color: #252422;
-      height: 700px;
-      width: 100%;
-      
     }
-
     .textbox {
-      align-items: center;
       text-align: center;
       background-color: #CCC5B9;
-      border: 2px solid black;
-      height:100% ;
-      width: 100%;
       margin: 30px;
-      }
-
-    
+    }
     .textbox ul{
       display: flex;
       align-items: center;
       list-style-type: none;
       justify-content: space-evenly;
+      width: fit-content;
     }
-
     .textbox ul li {
-  
-}
 
-
-
-   .textbox ul li img {
-      max-width: 110px;
-      max-height: 140px;
-  }
-   
- 
-   .h1 {
-      size: auto;
-      object-fit: fill;
-     }
-
-    
-   .p{
-      font-weight: 500;  
     }
-    
-
-    .bot-container {
-      background-color: #EB5E28;
-      height: 60px;
-      border: 2px solid black;
+    .textbox ul li img {
+     max-width: 80px;
+     max-height: 100px;
     }
-
-
-    
   </style>
 </head>
 <body>
@@ -232,7 +166,7 @@
     <h1 class="sub-title">Profesionalize in the construction of lofts, extensions, refurbishments.</h1>
   </div>
 
-<div class="text-container">
+ <div class="text-container">
     <div class="textbox">
       <h1>Our goal is to get as many jobs as possible to make maney</h1>
       <p>The purpose of MUBuilders is to provide the best quality service and build quality on your own private residence.</p>

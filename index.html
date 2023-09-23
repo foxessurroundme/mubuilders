@@ -43,7 +43,7 @@
     
     
     
-    body {
+    .body {
       margin: 0;
       padding: 0;
       font-family: 'Roboto Mono', monospace;
@@ -53,19 +53,23 @@
       align-items: center;
       justify-content: space-between;
       background-color: #403D39;
-      padding: 10px 20px; 
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+      width:auto;
+      height: auto;
+      
     }
     .button-container {
       display: flex;
-      gap: 15px; 
+      gap: 10px; 
+      width: fit-content;
+      padding: 10px;
     }
     .logo img {
-      width: 180px; 
-      height: 100px;
+      width: auto; 
+      height: 80px;
     }
     .buttoni button {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: bold;
       font-variant: small-caps;
       background-color: #EB5E28;
@@ -80,11 +84,11 @@
     .buttoni button:hover {
       background-color: #D8471E;
     }
-    .title-container {
+   .title-container {
       position: relative;
       display: flex;
+      width: auto;
       height: 760px;
-      width: 100%;
       align-items: center;
       text-align: center;
       justify-content: center;
@@ -116,7 +120,7 @@
       align-items: center top;
       text-align: center;
       justify-content: center;
-      width: 100%;
+      width: auto;
     }
     .sub-title {
       font-family: 'Roboto Slab', serif;
@@ -125,15 +129,32 @@
     }
     .text-container {
       display: flex;
+      justify-content: center;
       background-image: url("Ornament-Vector-2.png"); 
       background-repeat: repeat;
       flex-direction: row;
       background-color: #252422;
+      width: auto;
+      height: 100%;
+      
     }
     .textbox {
+      align-items: center ;
+      justify-content: center;
       text-align: center;
       background-color: #CCC5B9;
-      margin: 30px;
+      width: auto;
+      height: 100%;
+      align-items: center top;
+      justify-content: center;
+      margin: 20px;
+    }
+    .textbox p {
+      font-size: 22px;
+    }
+    .textbox h1 {
+      font-size: 26px;
+      font-weight: 600;
     }
     .textbox ul{
       display: flex;
@@ -142,9 +163,7 @@
       justify-content: space-evenly;
       width: fit-content;
     }
-    .textbox ul li {
-
-    }
+ 
     .textbox ul li img {
      max-width: 80px;
      max-height: 100px;

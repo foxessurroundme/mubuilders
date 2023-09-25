@@ -4,388 +4,247 @@
   <title>Home MUBuilders</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
   <style>
-@media screen and (max-width: 768px) {
-  .title{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap');
+
+    @media screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .sub-title {
     font-size: 20px;
   }
-  .sub-title{
-      font-size: 12px;
+
+  .textbox h1 {
+    font-size: 18px;
   }
-  .textbox h1{
-          font-size: 9px;
+
+  .textbox p {
+    font-size: 14px;
   }
-  .textbox p{
-     font-size: 6px;
+
+  .logo img {
+    max-width: 80px;
+    height: auto;
   }
-  .top-container{
-     width: 100%;
-     height: auto;
-     position: relative;
+
+  .button-container a {
+    font-size: 14px;
   }
-  .logo{
-    max-width: 150px;
-  }
+
   .buttoni button {
     font-size: 14px;
-    margin: 5px;
   }
-  
 }
 
-    
-    
-    
-    
-    .body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto Mono', monospace;
-    }
-    .top-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #403D39;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
-      width:auto;
-      height: auto;
-      
-    }
-    .button-container {
-      display: flex;
-      gap: 10px; 
-      width: fit-content;
-      padding: 10px;
-    }
-    .logo img {
-      width: auto; 
-      height: 80px;
-    }
-    .buttoni button {
-      font-size: 14px;
-      font-weight: bold;
-      font-variant: small-caps;
-      background-color: #EB5E28;
-      color: black;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      border: 2px solid black;
-    }
-    .buttoni button:hover {
-      background-color: #D8471E;
-    }
-   .title-container {
-      position: relative;
-      display: flex;
-      width: auto;
-      height: 760px;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      padding: 0;
-      overflow: hidden;
-      border: 2px solid black;
-    }
-    .title {
-      font-family: 'Roboto Mono', monospace;
-      z-index: 1;
-      font-size: 70px;
-      font-weight: 900;
-    }
-    .slideshow-image {
-      position: absolute;
-      transition: opacity 1s ease-in-out;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-    .sub-container {
-      display: flex;
-      background: linear-gradient(45deg, #001427 20%, transparent 20%);
-      background-color: #403D39;
-      align-items: center top;
-      text-align: center;
-      justify-content: center;
-      width: auto;
-    }
-    .sub-title {
-      font-family: 'Roboto Slab', serif;
-      font-size: 40px;
-      margin-top: 40px;
-    }
-    .text-container {
-      display: flex;
-      justify-content: center;
-      background-image: url("Ornament-Vector-2.png"); 
-      background-repeat: repeat;
-      flex-direction: row;
-      background-color: #252422;
-      width: auto;
-      height: 100%;
-      
-    }
-    .textbox {
-      align-items: center ;
-      justify-content: center;
-      text-align: center;
-      background-color: #CCC5B9;
-      width: auto;
-      height: 100%;
-      align-items: center top;
-      justify-content: center;
-      margin: 20px;
-    }
-    .textbox p {
-      font-size: 22px;
-    }
-    .textbox h1 {
-      font-size: 26px;
-      font-weight: 600;
-    }
-    .textbox ul{
-      display: flex;
-      align-items: center;
-      list-style-type: none;
-      justify-content: space-evenly;
-      width: fit-content;
-    }
- 
-    .textbox ul li img {
-     max-width: 80px;
-     max-height: 100px;
-    }
-  </style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #0e0c0c;
+  color: black;
+}
+
+.all-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;}
+
+.sub-container {
+  text-align: center;
+}
+
+.sub-container-1 {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  z-index: 2;
+  background-color: #353333;
+}
+
+.sub-container-2 {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+  align-items: center ;
+  justify-content: center ;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.thing{
+    z-index: 1;
+    width: 100%;
+    max-width: 400px;
+}
+
+.sub-container-3 {
+  width: 80%;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: #948787;
+  border-radius: 10%;
+  border: 4px solid black;
+
+}
+
+.textbox {
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: crimson;
+}
+
+
+.textbox p {}
+
+
+.textbox h1 {
+  font-size: 26px;
+}
+
+
+.textbox ul {}
+
+
+.textbox ul li img {}
+
+
+.sub-title {
+  font-size: 30px;
+}
+
+
+.title {
+  font-size: 60px;
+  display: flex;
+  width: fit-content;
+  position: relative;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+    z-index: 2;
+}
+
+
+
+
+
+.logo img {
+  display: flex;
+  float: left;
+  max-width: 100px;
+  height: 100%;
+}
+
+
+
+.buttoni button {
+  font-size: 14px;
+  font-weight: bold;
+  font-variant: small-caps;
+  background-color: #e28413;
+  color: black;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+.buttoni button:hover {
+  background-color: #ffba49;
+}
+
+
+   
+</style>
 </head>
 <body>
-  <div class="top-container">
-    <div class="logo">
-      <img src="mu logo.png" alt="Logo">
+    
+  <div class="all-container">
+
+    <div class="sub-container sub-container-1">
+      <div class="logo">
+        <img src="C:\Users\ukepe\Pictures\Saved Pictures\mu logo.png" alt="Logo">
+      </div>
+      <div class="buttoni button-container">
+        <a href="home.html"><button>Home</button></a>
+        <a href="service.html"><button>Services</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+      </div>
     </div>
-    <div class="buttoni button-container">
-      <a href="index.html"><button>Home</button></a>
-      <a href="service.html"><button>Services</button></a>
-      <a href="contact.html"><button>Contact</button></a>
+  
+  
+  
+    <div class="sub-container sub-container-2">
+        <img class="slideshow-image" src="C:\Users\ukepe\Pictures\IMG_20220309_193518.jpg" alt="Slide 1">
+        <img class="slideshow-image" src="C:\Users\ukepe\Pictures\IMG_20220901_165653.jpg" alt="Slide 2">
+        <img class="slideshow-image" src="C:\Users\ukepe\Pictures\sett-league-of-legends.gif" alt="Slide 3">
+        <h1 class="title">MUBuilders Professional Residential Builders</h1>
+
     </div>
-  </div>
+  
+  
+    <div class="sub-container sub-container-3 ">
+        <img src="C:\Users\ukepe\Pictures\Saved Pictures\mu logo.png" class="thing">
 
-
-
-
-
-
-
-
-
-  <div class="title-container">
-    <div>
-      <h1 class="title">MUBuilders Professional Residential Builders</h1>
-      <img class="slideshow-image" src="IMG_20220309_193518.jpg" alt="Slide 1">
-      <img class="slideshow-image" src="IMG_20220901_165653.jpg" alt="Slide 2">
-      <img class="slideshow-image" src="sett-league-of-legends.gif" alt="Slide 3">
+        <h1 class="sub-title">We profesionalize in the construction of lofts, extensions, refurbishments.</h1>
+        <p>The purpose of MUBuilders is to provide the best quality service and build quality on your own private residence.</p>
+        <p>With no doubt is it its own task to own a residence, much more  find the means to invest into it, hence why you must first invest into professionals.</p>
+        <p>Our company is built up of builders with many years of experience up to some with 25 years worth of expeience in  New builds, Lofts and Extensions, with many specialists on call at a moments notice.</p>
+        <h1>MUBuilders Partners and Affiliations:</h1>
+        <ul>
+          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">korabbuilders</li>
+          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">gerti architecs</li>
+          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">ffshehu constructions</li>
+          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">sula pastering</li>
+          work in progress as is most things right now, i am.
+        </ul>
     </div>
-  </div>
-
-  <div class="sub-container">
-    <h1 class="sub-title">Profesionalize in the construction of lofts, extensions, refurbishments.</h1>
-  </div>
-
- <div class="text-container">
-    <div class="textbox">
-      <h1>Our goal is to get as many jobs as possible to make maney</h1>
-      <p>The purpose of MUBuilders is to provide the best quality service and build quality on your own private residence.</p>
-      <p>With no doubt is it its own task to own a residence, much more  find the means to invest into it, hence why you must first invest into professionals.</p>
-      <p>Our company is built up of builders with many years of experience up to some with 25 years worth of expeience in  New builds, Lofts and Extensions, with many specialists on call at a moments notice.</p>
-      <h1>MUBuilders Partners and Affiliations:</h1>
-      <ul>
-        <li><img src="IMG_20220302_074721.jpg">korabbuilders</li>
-        <li><img src="IMG_20220302_074721.jpg">gerti architecs</li>
-        <li><img src="IMG_20220302_074721.jpg">ffshehu constructions</li>
-        <li><img src="IMG_20220302_074721.jpg">sula pastering</li>
-        <li><img src="IMG_20220302_074721.jpg"> doggo</li>
-         work in progress as is most things right now, i am.
-      </ul>
-    </div>
-  </div>
+</div>
+  
 
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
     const slideshowImages = document.querySelectorAll('.slideshow-image');
     let currentSlideIndex = 0;
 

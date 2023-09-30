@@ -8,35 +8,59 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap');
 
     @media screen and (max-width: 768px) {
-  .title {
-    font-size: 30px;
-  }
+            .title {
+                font-size: 24px;
+            }
 
-  .sub-title {
-    font-size: 20px;
-  }
+            .sub-title {
+                font-size: 18px;
+            }
 
-  .textbox h1 {
-    font-size: 18px;
-  }
+            .textbox h1 {
+                font-size: 16px;
+            }
 
-  .textbox p {
-    font-size: 14px;
-  }
+            .textbox p {
+                font-size: 14px;
+            }
 
-  .logo img {
-    max-width: 80px;
-    height: auto;
-  }
+            .logo img {
+                max-width: 60px;
+            }
 
-  .button-container a {
-    font-size: 14px;
-  }
+            .button-container a {
+                font-size: 12px;
+            }
 
-  .buttoni button {
-    font-size: 14px;
-  }
-}
+            .buttoni button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+
+            .slideshow-image {
+                height: 30%;
+            }
+
+            .sub-container-1 {
+                height: 60px;
+            }
+
+            .sub-container-3 h1 {
+                font-size: 24px;
+            }
+
+            .sub-title {
+                font-size: 28px;
+            }
+
+            .sub-container-3 p {
+                font-size: 16px;
+            }
+
+            .aff p {
+                font-size: 10px;
+            }
+        }
 
 body {
   margin: 0;
@@ -44,6 +68,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   background-color: #0e0c0c;
   color: black;
+ 
 }
 
 .all-container {
@@ -52,13 +77,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100%;}
+  height: 100%;
+  background: url("photos/Ornament-Vector-2.png") repeat fixed 0 0;
+  background-repeat: repeat;
+}
+
+.all-container h1 {
+  z-index: 2;
+}
+  
 
 .sub-container {
   text-align: center;
 }
 
 .sub-container-1 {
+  flex-direction: row;
   width: 100%;
   height: 80px;
   position: relative;
@@ -66,92 +100,13 @@ body {
   background-color: #353333;
 }
 
-.sub-container-2 {
-  width: 100%;
-  position: relative;
-  padding-top: 56.25%;
-  align-items: center ;
-  justify-content: center ;
-  overflow: hidden;
-}
-
-.slideshow-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-.thing{
-    z-index: 1;
-    width: 100%;
-    max-width: 400px;
-}
-
-.sub-container-3 {
-  width: 80%;
-  height: auto;
-  position: relative;
-  justify-content: center;
-  flex-direction: column;
-  margin: 20px;
-  background-color: #948787;
-  border-radius: 10%;
-  border: 4px solid black;
-
-}
-
-.textbox {
-  justify-content: center;
-  flex-direction: column;
-  margin: 20px;
-  background-color: crimson;
-}
-
-
-.textbox p {}
-
-
-.textbox h1 {
-  font-size: 26px;
-}
-
-
-.textbox ul {}
-
-
-.textbox ul li img {}
-
-
-.sub-title {
-  font-size: 30px;
-}
-
-
-.title {
-  font-size: 60px;
-  display: flex;
-  width: fit-content;
-  position: relative;
-  font-family: 'Roboto Mono', monospace;
-  text-align: center;
-    z-index: 2;
-}
-
-
-
-
-
 .logo img {
   display: flex;
   float: left;
   max-width: 100px;
   height: 100%;
+  background: linear-gradient(45deg, grey 45%, transparent 20%);
 }
-
-
 
 .buttoni button {
   font-size: 14px;
@@ -172,8 +127,92 @@ body {
   background-color: #ffba49;
 }
 
+.sub-container-2 {
+  width: 100%;
+  position: relative;
+  padding-top: 45.25%;
+  align-items: center ;
+  justify-content: center ;
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  text-align: center;
+  border: 2px solid black;
+}
 
-   
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+.sub-container-3 {
+  display: flex;
+  align-items: center; 
+  width: auto;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  border: 3px solid black;
+  z-index: 1;
+  background-color: #CCC5B9;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.textbox {
+  margin: 20px;
+  background-color: crimson;
+  z-index: 1;
+}
+
+.sub-container-3 h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.sub-title {
+  font-size: 32px;
+}
+
+.sub-container-3 p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sub-container-3 li {
+  list-style: none;
+}
+
+
+.thing {
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.boop{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.aff p {
+  font-size: 10px;
+
+}
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -181,42 +220,36 @@ body {
   <div class="all-container">
 
     <div class="sub-container sub-container-1">
-      <div class="logo">
-        <img src="C:\Users\ukepe\Pictures\Saved Pictures\mu logo.png" alt="Logo">
-      </div>
+      
       <div class="buttoni button-container">
         <a href="home.html"><button>Home</button></a>
-        <a href="service.html"><button>Services</button></a>
         <a href="contact.html"><button>Contact</button></a>
       </div>
     </div>
   
-  
-  
     <div class="sub-container sub-container-2">
-        <img class="slideshow-image" src="C:\Users\ukepe\Pictures\IMG_20220309_193518.jpg" alt="Slide 1">
-        <img class="slideshow-image" src="C:\Users\ukepe\Pictures\IMG_20220901_165653.jpg" alt="Slide 2">
-        <img class="slideshow-image" src="C:\Users\ukepe\Pictures\sett-league-of-legends.gif" alt="Slide 3">
-        <h1 class="title">MUBuilders Professional Residential Builders</h1>
-
+        <img class="slideshow-image" src="photos/IMG_20220309_193518.jpg" alt="Slide 1">
+        <img class="slideshow-image" src="photos/IMG_20220901_165653.jpg" alt="Slide 2">
+        <img class="slideshow-image" src="photos/sett-league-of-legends.gif" alt="Slide 3">
     </div>
   
-  
     <div class="sub-container sub-container-3 ">
-        <img src="C:\Users\ukepe\Pictures\Saved Pictures\mu logo.png" class="thing">
+        <img src="photos/mu logo.png" class="thing">
 
         <h1 class="sub-title">We profesionalize in the construction of lofts, extensions, refurbishments.</h1>
-        <p>The purpose of MUBuilders is to provide the best quality service and build quality on your own private residence.</p>
-        <p>With no doubt is it its own task to own a residence, much more  find the means to invest into it, hence why you must first invest into professionals.</p>
-        <p>Our company is built up of builders with many years of experience up to some with 25 years worth of expeience in  New builds, Lofts and Extensions, with many specialists on call at a moments notice.</p>
+        <p>MUBuilders provides the best quality service and build quality on your own private residence.</p>
+        <p>Our company supplies many builders and many years of experience for your New builds, Loft conversions, Extensions and Refurbishments.</p>
+        <p>Create your ideal home by invesing into our services.</p>
         <h1>MUBuilders Partners and Affiliations:</h1>
-        <ul>
-          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">korabbuilders</li>
-          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">gerti architecs</li>
-          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">ffshehu constructions</li>
-          <li ><img rc="C:\Users\ukepe\Pictures\IMG_20220302_074721.jpg">sula pastering</li>
-          work in progress as is most things right now, i am.
-        </ul>
+
+        <div class="aff">
+          <ul>
+            <p>Adecon Design and Build Ltd</p>
+            <li ><img src="photos/adecon logo.png" class="boop" ></li>
+            
+          </ul>
+        </div>
+        
     </div>
 </div>
   
@@ -229,40 +262,3 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-    const slideshowImages = document.querySelectorAll('.slideshow-image');
-    let currentSlideIndex = 0;
-
-    function showSlide(slideIndex) {
-      for (let i = 0; i < slideshowImages.length; i++) {
-        slideshowImages[i].style.opacity = '0';
-      }
-      slideshowImages[slideIndex].style.opacity = '1';
-    }
-
-    function nextSlide() {
-      currentSlideIndex = (currentSlideIndex + 1) % slideshowImages.length;
-      showSlide(currentSlideIndex);
-    }
-
-    // Start the slideshow
-    showSlide(currentSlideIndex);
-    setInterval(nextSlide, 10000); // Change image every 3 seconds
-  </script>
-</body>
-</html>

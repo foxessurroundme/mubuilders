@@ -1,214 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Contact MUBuilders</title>
-<style>
-         body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto Mono', monospace;
-    }
+    <title>Contact MUBuilders</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap');
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
 
-    @media screen and (max-width: 768px) {
-    
-      .title-container {
-      height: 400px; 
-    }
-    li {
-      font-size: 12px;
-    }
-  }
+        @media screen and (max-width: 768px) {
+            .title {
+                font-size: 24px;
+            }
 
+            .sub-title {
+                font-size: 18px;
+            }
 
+            .textbox h1 {
+                font-size: 16px;
+            }
 
+            .textbox p {
+                font-size: 14px;
+            }
 
-.top-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #403D39;
-      height: 100px;
-      padding: 10px 20px; 
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
-    }
+            .logo img {
+                max-width: 60px;
+            }
 
-.button-container {
-      display: flex;
-      gap: 15px; 
-    }
+            .button-container a {
+                font-size: 12px;
+            }
 
-.logo img {
-      width: 180px; 
-      height: 100px;
-    }
+            .buttoni button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
 
-.buttoni a {
-      text-decoration: none;
-      
-    }
+            .slideshow-image {
+                height: 30%;
+            }
 
-.buttoni button {
-      font-size: 18px;
-      font-weight: bold;
-      font-variant: small-caps;
-      background-color: #EB5E28;
-      color: black;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      border: 2px solid black;
-    }
+            .sub-container-1 {
+                height: 60px;
+            }
 
-.buttoni button:hover {
-      background-color: #D8471E;
-    }
+            .contact-title h1 {
+                font-size: 24px;
+            }
 
+            .contact-text h2 {
+                font-size: 16px;
+            }
 
-    .main-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background-color: #252422;
-  width: 100%;
-  height: 1000px;
-  border: 2px solid black;
-  background-image: url("Ornament-Vector-2.png"); 
-  background-repeat: repeat;
-}
+            .mail {
+                font-size: 16px;
+            }
+        }
 
-.contact-text {
-    text-align: center;
-    background: linear-gradient(45deg, #001427 20%, transparent 20%);
-    background-color: #CCC5B9;
-    padding: 20px;
-    height: 400px;
-    border: 2px solid black;
-    margin-top: 60px;
-    
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0e0c0c;
+            color: black;
+            height: 100%;
+        }
 
-}
+        .all-container {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100%;
+            background: url("photos/Ornament-Vector-2.png") repeat fixed 0 0;
+            background-repeat: repeat;
+        }
 
+        .all-container h1 {
+            z-index: 2;
+        }
 
-.mail {
-  font-family: 'Roboto Mono', monospace;
-  color: #252422;
-  font-size: 20px;
-}
+        .sub-container {
+            text-align: center;
+        }
 
+        .sub-container-1 {
+            flex-direction: row;
+            width: 100%;
+            height: 80px;
+            position: relative;
+            z-index: 2;
+            background-color: #353333;
+        }
 
-.fa:hover {
-         opacity: 0.7;
-}
+        .logo img {
+            display: flex;
+            float: left;
+            max-width: 100px;
+            height: 100%;
+        }
 
-.fa {
+        .buttoni button {
+            font-size: 14px;
+            font-weight: bold;
+            font-variant: small-caps;
+            background-color: #e28413;
+            color: black;
+            padding: 6px 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        .buttoni button:hover {
+            background-color: #ffba49;
+        }
+
+        .sub-container-2 {
+            display: flex;
+            width: auto;
+            height: 100%;
+            position: relative;
+            justify-content: center;
+            flex-direction: column;
+            margin: 20px;
+            border: 3px solid black;
+            z-index: 1;
+            background-color: #CCC5B9;
             padding: 20px;
+            margin-top: 60px;
+        }
+
+        .contact-text {
+            font-family: 'Roboto Mono', monospace;
+            color: #252422;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .contact-title h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact-text h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .mail {
+            color: #252422;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .logo {
             width: 50px;
             text-align: center;
             text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .facebook:hover {
+            opacity: 0.7;
+        }
+
+        .thing {
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
 }
-
-
-         .fa-facebook {
-          background: #3B5998;
-          color: white;
-        }
-
-        .fas{
-          padding: 20px;
-            width: 50px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .fa-instagram{
-
-        }
-
-</style>
+    </style>
 </head>
 <body>
-   
-   
-    <div class="top-container">
-        <div class="logo">
-          <img src="C:\Users\ukepe\Pictures\Saved Pictures\mu logo.png" alt="Logo">
+<div class="all-container">
+  <div class="sub-container sub-container-1">
+      
+    <div class="buttoni button-container">
+      <a href="index.html"><button>Home</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+    </div>
+  </div>
+
+  
+    <div class="sub-container sub-container-2">
+        <div class="contact-text">
+            <div class="contact-title">
+              <img src="photos/mu logo.png" class="thing">
+
+                <h1>Contact us for a query:</h1>
+            </div>
+            <h2>Telephone: 07478138574</h2>
+            <h2>Alt Telephone: 07825663002</h2>
+            <a class="mail" href="mailto:MUBuildersoffice@gmail.com">MUBuildersoffice@gmail.com</a>
+            <h2>Follow us:</h2>
+            <a href="#" class="logo facebook"><img src="photos/facebooklogo.png" alt="Facebook Logo"></a>
+            <a href="https://www.instagram.com/mubuildersltd/" class="logo instagram"><img src="photos/instagramlogo.png" alt="Instagram Logo"></a>
         </div>
-        <div class="buttoni button-container">
-          <a href="index.html"><button>Home</button></a>
-          <a href="service.html"><button>Services</button></a>
-          <a href="contact.html"><button>Contact</button></a>
-        </div>
-      </div>
-    
-   
-    <div class="main-container">
-    <div class="contact-text">
-        <div class="contact-title">
-            <h1 >Contact us to have a chat straight away:</h1>
-        </div>
-      <div class="white-bk">
-    <h2>Telephone: 07478138574</h2>
-    <h2>Alt Telephone: 07825663002</h2>
-    <a class="mail" href="mailto:MUBuildersoffice@gmail.com">MUBuildersoffice@gmail.com</a>
-    <h2>Facebook: </h2>
-    <a class="fa fa-facebook" href="www.facebook.com"></a>
-    <h2>Instagram: </h2>
-    <a class="fas fa-instagram"  href="www.instagram.com"> </a>
-
-
-
-</div>
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-  const slideshowImages = document.querySelectorAll('.slideshow-image');
-  let currentSlideIndex = 0;
-
-  function showSlide(slideIndex) {
-    for (let i = 0; i < slideshowImages.length; i++) {
-      slideshowImages[i].style.opacity = '0';
-    }
-    slideshowImages[slideIndex].style.opacity = '1';
-  }
-
-  function nextSlide() {
-    currentSlideIndex = (currentSlideIndex + 1) % slideshowImages.length;
-    showSlide(currentSlideIndex);
-  }
-
-  // Start the slideshow
-  showSlide(currentSlideIndex);
-  setInterval(nextSlide, 10000); // Change image every 3 seconds
-</script>
-    
-    
+    </div>
+</div> 
 </body>
+</html>

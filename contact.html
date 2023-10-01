@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Contact MUBuilders</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap');
-        
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
+  <title>Home MUBuilders</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto+Slab:wght@300&display=swap');
 
-        @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
             .title {
                 font-size: 24px;
             }
@@ -50,16 +45,20 @@
                 height: 60px;
             }
 
-            .contact-title h1 {
+            .sub-container-3 h1 {
                 font-size: 24px;
             }
 
-            .contact-text h2 {
+            .sub-title {
+                font-size: 28px;
+            }
+
+            .sub-container-3 p {
                 font-size: 16px;
             }
 
-            .mail {
-                font-size: 16px;
+            .aff p {
+                font-size: 10px;
             }
         }
 
@@ -79,7 +78,7 @@
             align-items: center;
             justify-content: flex-start;
             min-height: 100%;
-            background: url("Ornament-Vector-2.png") repeat fixed 0 0;
+            background: url("photos/Ornament-Vector-2.png") repeat fixed 0 0;
             background-repeat: repeat;
         }
 
@@ -94,7 +93,7 @@
         .sub-container-1 {
             flex-direction: row;
             width: 100%;
-            height: auto;
+            height: 80px;
             position: relative;
             z-index: 2;
             background-color: #353333;
@@ -104,7 +103,7 @@
             display: flex;
             float: left;
             max-width: 100px;
-            height: auto; /* Adjusted */
+            height: 100%;
         }
 
         .buttoni button {
@@ -129,7 +128,7 @@
         .sub-container-2 {
             display: flex;
             width: auto;
-            height: auto;
+            height: 100%;
             position: relative;
             justify-content: center;
             flex-direction: column;
@@ -186,26 +185,33 @@
         }
 
         .thing {
-            z-index: 1;
-            width: 100%;
-            max-width: 400px;
-            position: relative;
-        }
-    </style>
+  z-index: 1;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+
+
+</style>
 </head>
 <body>
-    <div class="all-container">
-        <div class="sub-container sub-container-1">
-            <div class="buttoni button-container">
-                <a href="home.html"><button>Home</button></a>
-                <a href="contact.html"><button>Contact</button></a>
-            </div>
-        </div>
     
-        <div class="sub-container sub-container-2">
+  <div class="all-container">
+
+    <div class="sub-container sub-container-1">
+      
+      <div class="buttoni button-container">
+        <a href="home.html"><button>Home</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+      </div>
+    </div>
+  
+    <div class="sub-container sub-container-2">
             <div class="contact-text">
                 <div class="contact-title">
-                    <img src="mu logo.png" class="thing">
+                  <img src="mu logo.png" class="thing">
+    
                     <h1>Contact us for a query:</h1>
                 </div>
                 <h2>Telephone: 07478138574</h2>
@@ -216,6 +222,14 @@
                 <a href="https://www.instagram.com/mubuildersltd/" class="logo instagram"><img src="instagramlogo.png" alt="Instagram Logo"></a>
             </div>
         </div>
-    </div>
+  
+   
+        
+       
+        
+    
+</div>
+  
+
 </body>
 </html>
